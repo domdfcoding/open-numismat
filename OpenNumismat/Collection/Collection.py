@@ -735,7 +735,7 @@ class Collection(QtCore.QObject):
         else:
             QMessageBox.critical(self.parent(),
                                 self.tr("Open collection"),
-                                self.tr("Collection %s not exists") % fileName)
+                                self.tr("Collection %s does not exist") % fileName)
             return False
 
         self.settings = CollectionSettings(self.db)
