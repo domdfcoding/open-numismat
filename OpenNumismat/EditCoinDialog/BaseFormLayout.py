@@ -129,6 +129,9 @@ class FormItem(object):
     def label(self):
         return self._label
 
+    def setLabel(self, label):
+        return self._label.setText(label)
+
     def type(self):
         return self._type
 

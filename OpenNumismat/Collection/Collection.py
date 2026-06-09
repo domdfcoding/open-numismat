@@ -631,6 +631,16 @@ class CollectionSettings(BaseSettings):
             'default_status': 'demo',
             'colnect_category': 'coins',
             'colnect_country': 0,
+            "custom1": "Custom Field 1",
+            "custom2": "Custom Field 2",
+            "custom3": "Custom Field 3",
+            "custom4": "Custom Field 4",
+            "custom5": "Custom Field 5",
+            "custom6": "Custom Field 6",
+            "custom7": "Custom Field 7",
+            "custom8": "Custom Field 8",
+            "custom9": "Custom Field 9",
+            "custom10": "Custom Field 10",
     }
 
     def __init__(self, db):

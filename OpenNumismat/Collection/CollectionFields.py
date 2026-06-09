@@ -116,6 +116,7 @@ class CollectionField():
         self.name = name
         self.title = title
         self.type = type_
+        self.enabled = False
 
 
 class CollectionFieldsBase(QObject):
@@ -218,7 +219,17 @@ class CollectionFieldsBase(QObject):
                 ('address', QApplication.translate('CollectionFieldsBase', "Address"), Type.String),
                 ('latitude', QApplication.translate('CollectionFieldsBase', "Latitude"), Type.Value),
                 ('longitude', QApplication.translate('CollectionFieldsBase', "Longitude"), Type.Value),
-            ]
+                ('custom1', "Custom Field 1", Type.String),
+                ('custom2', "Custom Field 2", Type.String),
+                ('custom3', "Custom Field 3", Type.String),
+                ('custom4', "Custom Field 4", Type.String),
+                ('custom5', "Custom Field 5", Type.String),
+                ('custom6', "Custom Field 6", Type.String),
+                ('custom7', "Custom Field 7", Type.String),
+                ('custom8', "Custom Field 8", Type.String),
+                ('custom9', "Custom Field 9", Type.String),
+                ('custom10', "Custom Field 10", Type.String),
+        ]
 
         self.fields = []
         for id_, field in enumerate(fields):

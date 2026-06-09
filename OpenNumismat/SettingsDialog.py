@@ -306,6 +306,84 @@ class CollectionSettingsPage(QWidget):
             if result == QMessageBox.Yes:
                 self.model.recalculateAllImages(self)
 
+class CustomFieldsSettingsPage(QWidget):
+
+    def __init__(self, collection, parent=None):
+        super().__init__(parent)
+
+        self.settings = collection.settings
+        self.model = collection.model()
+
+        layout = QFormLayout()
+        layout.setRowWrapPolicy(QFormLayout.WrapLongRows)
+
+        layout.addWidget(QLabel(self.tr("Names of Custom Fields"), self))
+
+        self.custom1name = QLineEdit(self)
+        self.custom1name.setMaximumWidth(120)
+        layout.addRow(self.tr("Custom Field 1"), self.custom1name)
+        self.custom1name.setText(str(self.settings['custom1']))
+
+        self.custom2name = QLineEdit(self)
+        self.custom2name.setMaximumWidth(120)
+        layout.addRow(self.tr("Custom Field 2"), self.custom2name)
+        self.custom2name.setText(str(self.settings['custom2']))
+
+        self.custom3name = QLineEdit(self)
+        self.custom3name.setMaximumWidth(120)
+        layout.addRow(self.tr("Custom Field 3"), self.custom3name)
+        self.custom3name.setText(str(self.settings['custom3']))
+
+        self.custom4name = QLineEdit(self)
+        self.custom4name.setMaximumWidth(120)
+        layout.addRow(self.tr("Custom Field 4"), self.custom4name)
+        self.custom4name.setText(str(self.settings['custom4']))
+
+        self.custom5name = QLineEdit(self)
+        self.custom5name.setMaximumWidth(120)
+        layout.addRow(self.tr("Custom Field 5"), self.custom5name)
+        self.custom5name.setText(str(self.settings['custom5']))
+
+        self.custom6name = QLineEdit(self)
+        self.custom6name.setMaximumWidth(120)
+        layout.addRow(self.tr("Custom Field 6"), self.custom6name)
+        self.custom6name.setText(str(self.settings['custom6']))
+
+        self.custom7name = QLineEdit(self)
+        self.custom7name.setMaximumWidth(120)
+        layout.addRow(self.tr("Custom Field 7"), self.custom7name)
+        self.custom7name.setText(str(self.settings['custom7']))
+
+        self.custom8name = QLineEdit(self)
+        self.custom8name.setMaximumWidth(120)
+        layout.addRow(self.tr("Custom Field 8"), self.custom8name)
+        self.custom8name.setText(str(self.settings['custom8']))
+
+        self.custom9name = QLineEdit(self)
+        self.custom9name.setMaximumWidth(120)
+        layout.addRow(self.tr("Custom Field 9"), self.custom9name)
+        self.custom9name.setText(str(self.settings['custom9']))
+
+        self.custom10name = QLineEdit(self)
+        self.custom10name.setMaximumWidth(120)
+        layout.addRow(self.tr("Custom Field 10"), self.custom10name)
+        self.custom10name.setText(str(self.settings['custom10']))
+
+        self.setLayout(layout)
+
+    def save(self):
+        self.settings['custom1'] = self.custom1name.text()
+        self.settings['custom2'] = self.custom2name.text()
+        self.settings['custom3'] = self.custom3name.text()
+        self.settings['custom4'] = self.custom4name.text()
+        self.settings['custom5'] = self.custom5name.text()
+        self.settings['custom6'] = self.custom6name.text()
+        self.settings['custom7'] = self.custom7name.text()
+        self.settings['custom8'] = self.custom8name.text()
+        self.settings['custom9'] = self.custom9name.text()
+        self.settings['custom10'] = self.custom10name.text()
+        
+        self.settings.save()
 
 class FieldsSettingsPage(QWidget):
     DataRole = Qt.UserRole
@@ -484,6 +562,7 @@ class SettingsDialog(QDialog):
         collectionPage = CollectionSettingsPage(collection, self)
         fieldsPage = FieldsSettingsPage(collection, self)
         colnectPage = ColnectSettingsPage(collection, self)
+        customPage = CustomFieldsSettingsPage(collection, self)
 
         self.setWindowTitle(self.tr("Settings"))
 
@@ -496,6 +575,9 @@ class SettingsDialog(QDialog):
         if not collection.isOpen():
             self.tab.setTabEnabled(index, False)
         index = self.tab.addTab(colnectPage, "Colnect")
+        if not collection.isOpen():
+            self.tab.setTabEnabled(index, False)
+        index = self.tab.addTab(customPage, "Custom Fields")
         if not collection.isOpen():
             self.tab.setTabEnabled(index, False)
 

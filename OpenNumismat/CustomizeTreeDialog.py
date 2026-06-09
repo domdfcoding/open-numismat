@@ -165,7 +165,9 @@ class CustomizeTreeDialog(QDialog):
                               'status', 'material', 'fineness', 'grade',
                               'quality', 'rarity', 'variety', 'saller',
                               'payplace', 'buyer', 'saleplace', 'defect',
-                              'storage'):
+                              'storage', 'custom1', 'custom2', 'custom3',
+                              'custom4', 'custom5', 'custom6', 'custom7',
+                              'custom8', 'custom9', 'custom10'):
                 self.availableFields.append(field)
                 if field.name not in self.treeParam.usedFieldNames():
                     item = QListWidgetItem(field.title)

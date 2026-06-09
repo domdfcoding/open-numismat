@@ -36,6 +36,7 @@ class DetailsTabWidget(QTabWidget):
         self.createParametersPage()
         self.createDesignPage()
         self.createClassificationPage()
+        self.createCustomPage()
 
     def createCoinPage(self):
         main = self.mainDetailsLayout()
@@ -81,6 +82,13 @@ class DetailsTabWidget(QTabWidget):
         title = QApplication.translate('DetailsTabWidget', "Classification")
         self.addTabPage(title, [catalogue, rarity, price, self.Stretch,
                                 variation, url])
+    
+    def createCustomPage(self):
+        custom = self.customLayout()
+        
+        #title = QApplication.translate('DetailsTabWidget', "Custom")
+        title = "Custom"
+        self.addTabPage(title, [custom])
 
     def _layoutToWidget(self, layout):
         widget = QWidget(self)
@@ -166,6 +174,17 @@ class DetailsTabWidget(QTabWidget):
         for field in fields:
             if field not in fields.systemFields:
                 self.addItem(field)
+
+        self.items["custom1"].setLabel(self.settings["custom1"])
+        self.items["custom2"].setLabel(self.settings["custom2"])
+        self.items["custom3"].setLabel(self.settings["custom3"])
+        self.items["custom4"].setLabel(self.settings["custom4"])
+        self.items["custom5"].setLabel(self.settings["custom5"])
+        self.items["custom6"].setLabel(self.settings["custom6"])
+        self.items["custom7"].setLabel(self.settings["custom7"])
+        self.items["custom8"].setLabel(self.settings["custom8"])
+        self.items["custom9"].setLabel(self.settings["custom9"])
+        self.items["custom10"].setLabel(self.settings["custom10"])
 
     def fillItems(self, record):
         if not record.isEmpty():
@@ -433,6 +452,23 @@ class DetailsTabWidget(QTabWidget):
 
         return layout
 
+    def customLayout(self):
+        layout = BaseFormLayout()
+        layout.setAlignment(Qt.AlignTop)
+
+        layout.addRow(self.items['custom1'])
+        layout.addRow(self.items['custom2'])
+        layout.addRow(self.items['custom3'])
+        layout.addRow(self.items['custom4'])
+        layout.addRow(self.items['custom5'])
+        layout.addRow(self.items['custom6'])
+        layout.addRow(self.items['custom7'])
+        layout.addRow(self.items['custom8'])
+        layout.addRow(self.items['custom9'])
+        layout.addRow(self.items['custom10'])
+
+        return layout
+    
     def coordinatesLayout(self):
         layout = BaseFormLayout()
 
@@ -548,6 +584,7 @@ class FormDetailsTabWidget(DetailsTabWidget):
         self.createParametersPage()
         self.createDesignPage()
         self.createClassificationPage()
+        self.createCustomPage()
         self.createImagePage()
 
     def createMapPage(self):
