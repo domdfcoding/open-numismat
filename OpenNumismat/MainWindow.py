@@ -64,8 +64,8 @@ class MainWindow(QMainWindow):
         self.viewButton.setMenu(viewMenu)
         self.viewButton.setDefaultAction(self.tableViewAct)
 
-        colnectAct = QAction(createIcon('colnect.png'),
-                             self.tr("Colnect..."), self)
+        colnectAct = QAction(createIcon('numista.png'),
+                             self.tr("Numista Import"), self)
         colnectAct.triggered.connect(self.colnectEvent)
         self.collectionActs.append(colnectAct)
 
@@ -161,14 +161,6 @@ class MainWindow(QMainWindow):
             importExcelAct.triggered.connect(self.importExcel)
             self.collectionActs.append(importExcelAct)
             importMenu.addAction(importExcelAct)
-
-        if ImportColnect.isAvailable():
-            importColnectAct = QAction(
-                                    createIcon('colnect.png'),
-                                    "Colnect", self)
-            importColnectAct.triggered.connect(self.importColnect)
-            self.collectionActs.append(importColnectAct)
-            importMenu.addAction(importColnectAct)
 
         if ImportCabinet.isAvailable():
             importCabinetAct = QAction(
@@ -649,14 +641,6 @@ class MainWindow(QMainWindow):
             self, self.tr("Select file"), defaultDir, "*.xls *.xlsx")
         if file:
             imp = ImportExcel(self)
-            imp.importData(file, self.viewTab.currentModel())
-
-    def importColnect(self):
-        defaultDir = ImportColnect.defaultDir()
-        file, _selectedFilter = QFileDialog.getOpenFileName(
-            self, self.tr("Select file"), defaultDir, "*.csv")
-        if file:
-            imp = ImportColnect(self)
             imp.importData(file, self.viewTab.currentModel())
 
     def exportMobile(self):

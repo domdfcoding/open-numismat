@@ -9,7 +9,6 @@ from OpenNumismat.Reports import Report
 from OpenNumismat.Tools.DialogDecorators import storeDlgSizeDecorator
 from OpenNumismat.Settings import Settings
 from OpenNumismat.Collection.CollectionFields import Statuses
-from OpenNumismat.Collection.Import.Colnect import ColnectCache
 
 
 class MainSettingsPage(QWidget):
@@ -462,29 +461,7 @@ class FieldsSettingsPage(QWidget):
 
 
 class ColnectSettingsPage(QWidget):
-    Languages = (
-        ('ar', 'العربية'), ('az', 'Azərbaycanca'), ('be', 'Беларуская'),
-        ('bg', 'Български'), ('ca', 'Català'), ('cs', 'Česky'),
-        ('da', 'Dansk'), ('de', 'Deutsch'), ('el', 'Ελληνικά'),
-        ('en', 'English'), ('es', 'Español'), ('et', 'Eesti'), ('fa', 'فارسی'),
-        ('fr', 'Français'), ('ko', '한국어'), ('hr', 'Hrvatski'),
-        ('id', 'Bahasa Indonesia'), ('it', 'Italiano'), ('he', 'עברית'),
-        ('ka', 'ქართული '), ('lv', 'Latviešu'), ('lt', 'Lietuvių'),
-        ('hu', 'Magyar'), ('nl', 'Nederlands'), ('ja', '日本語'),
-        ('no', 'Norsk'), ('pl', 'Polski'), ('pt', 'Português'),
-        ('br', 'Português BR'), ('ro', 'Română'), ('ru', 'Русский'),
-        ('sk', 'Slovenčina'), ('sl', 'Slovenščina'), ('sr', 'Српски'),
-        ('fi', 'Suomi'), ('sv', 'Svenska'), ('th', 'ภาษาไทย '),
-        ('tr', 'Türkçe'), ('uk', 'Українська'), ('vi', 'Tiếng Việt'),
-        ('zh', '中文（简体）'), ('zt', '中文 (繁體)'),
-        # ('ky', 'Кыргызча'), ('ta', 'தமிழ்'), ('hy', 'Հայերեն'),
-        # ('sw', 'Kiswahili'), ('bn', 'বাংলা'), ('si', 'සිංහල'), ('gu', 'ગુજરાતી'),
-        # ('ht', 'Kreyòl ayisyen'), ('mn', 'Монгол'), ('sq', 'Shqip'),
-        # ('af', 'Afrikaans'), ('te', 'తెలుగు'), ('ml', 'മലയാളം'), ('hi', 'हिन्दी'),
-        # ('tl', 'Filipino'), ('ms', 'Melayu'), ('pa', 'پنجابی'),
-        # ('kk', 'Қазақша'), ('ur', 'اردو'), ('mk', 'Македонски'),
-        # ('fy', 'Frysk'),
-    )
+    
 
     def __init__(self, collection, parent=None):
         super().__init__(parent)
@@ -494,41 +471,21 @@ class ColnectSettingsPage(QWidget):
         fLayout = QFormLayout()
         fLayout.setRowWrapPolicy(QFormLayout.WrapLongRows)
 
-        default_locale = settings['colnect_locale']
-        current = 9
-        self.languageSelector = QComboBox(self)
-        for i, lang in enumerate(self.Languages):
-            self.languageSelector.addItem(lang[1], lang[0])
-            if default_locale == lang[0]:
-                current = i
-        self.languageSelector.setCurrentIndex(current)
-        self.languageSelector.setSizePolicy(QSizePolicy.Fixed,
-                                            QSizePolicy.Fixed)
+       
 
-        fLayout.addRow(self.tr("Language"), self.languageSelector)
 
         self.autoclose = QCheckBox(self.tr("Close dialog after adding item"),
                                    self)
         self.autoclose.setChecked(settings['colnect_autoclose'])
         fLayout.addRow(self.autoclose)
 
-        self.skip_currency = QCheckBox(self.tr("Skip currency symbol"),
-                                       self)
-        self.skip_currency.setChecked(settings['colnect_skip_currency'])
-        fLayout.addRow(self.skip_currency)
 
-        clearCacheBtn = QPushButton(self.tr("Clear cache"), self)
-        clearCacheBtn.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
-        clearCacheBtn.clicked.connect(self.clearCache)
 
-        hLayout = QHBoxLayout()
-        hLayout.addWidget(clearCacheBtn, alignment=Qt.AlignRight)
 
         vLayout = QVBoxLayout()
         vLayout.addLayout(fLayout)
-        vLayout.addLayout(hLayout)
 
-        self.enabledGroup = QGroupBox(self.tr("Use Colnect"), self)
+        self.enabledGroup = QGroupBox(self.tr("Use Numista"), self)
         self.enabledGroup.setCheckable(True)
         self.enabledGroup.setChecked(settings['colnect_enabled'])
         self.enabledGroup.setLayout(vLayout)
@@ -538,16 +495,12 @@ class ColnectSettingsPage(QWidget):
 
         self.setLayout(layout)
 
-    def clearCache(self):
-        ColnectCache.clear()
 
     def save(self):
         settings = Settings()
 
         settings['colnect_enabled'] = self.enabledGroup.isChecked()
-        settings['colnect_locale'] = self.languageSelector.currentData()
         settings['colnect_autoclose'] = self.autoclose.isChecked()
-        settings['colnect_skip_currency'] = self.skip_currency.isChecked()
 
         settings.save()
 
@@ -574,7 +527,7 @@ class SettingsDialog(QDialog):
         index = self.tab.addTab(fieldsPage, self.tr("Fields"))
         if not collection.isOpen():
             self.tab.setTabEnabled(index, False)
-        index = self.tab.addTab(colnectPage, "Colnect")
+        index = self.tab.addTab(colnectPage, "Numista")
         if not collection.isOpen():
             self.tab.setTabEnabled(index, False)
         index = self.tab.addTab(customPage, "Custom Fields")

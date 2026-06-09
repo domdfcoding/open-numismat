@@ -810,82 +810,82 @@ The application will need to restart now.</source>
 <context>
     <name>CollectionSettingsPage</name>
     <message>
-        <location filename="SettingsDialog.py" line="204"/>
+        <location filename="SettingsDialog.py" line="203"/>
         <source>Max image side len</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="206"/>
+        <location filename="SettingsDialog.py" line="205"/>
         <source>0 for storing in original size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="215"/>
+        <location filename="SettingsDialog.py" line="214"/>
         <source>Preview image height</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="217"/>
+        <location filename="SettingsDialog.py" line="216"/>
         <source>Free format numeric fields</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="227"/>
+        <location filename="SettingsDialog.py" line="226"/>
         <source>Store column sorting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="232"/>
+        <location filename="SettingsDialog.py" line="231"/>
         <source>Images at bottom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="236"/>
+        <location filename="SettingsDialog.py" line="235"/>
         <source>Enable BC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="240"/>
+        <location filename="SettingsDialog.py" line="239"/>
         <source>Use RichText format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="245"/>
+        <location filename="SettingsDialog.py" line="244"/>
         <source>Show icons from reference (slow)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="246"/>
+        <location filename="SettingsDialog.py" line="245"/>
         <source>in tree</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="249"/>
+        <location filename="SettingsDialog.py" line="248"/>
         <source>in filters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="252"/>
+        <location filename="SettingsDialog.py" line="251"/>
         <source>in list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="259"/>
+        <location filename="SettingsDialog.py" line="258"/>
         <source>Used statuses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="277"/>
+        <location filename="SettingsDialog.py" line="276"/>
         <source>Default status for new coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="303"/>
+        <location filename="SettingsDialog.py" line="302"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="303"/>
+        <location filename="SettingsDialog.py" line="302"/>
         <source>Preview image height was changed. Recalculate it now?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -905,21 +905,6 @@ The application will need to restart now.</source>
 </context>
 <context>
     <name>ColnectConnector</name>
-    <message>
-        <location filename="Colnect.py" line="278"/>
-        <source>Colnect proxy-server not response</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Colnect.py" line="285"/>
-        <source>Colnect service not available</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Colnect.py" line="289"/>
-        <source>Colnect data not recognised</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>ColnectDialog</name>
@@ -989,93 +974,78 @@ The application will need to restart now.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Colnect.py" line="364"/>
-        <source>Banknotes</source>
+        <location filename="Colnect.py" line="38"/>
+        <source>Paste a &lt;a href=&quot;https://en.numista.com/&quot;&gt;Numista&lt;/a&gt; URL to add to the collection</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ColnectSettingsPage</name>
     <message>
-        <location filename="SettingsDialog.py" line="508"/>
-        <source>Language</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="SettingsDialog.py" line="510"/>
+        <location filename="SettingsDialog.py" line="477"/>
         <source>Close dialog after adding item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="515"/>
-        <source>Skip currency symbol</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="SettingsDialog.py" line="520"/>
-        <source>Clear cache</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="SettingsDialog.py" line="531"/>
-        <source>Use Colnect</source>
+        <location filename="SettingsDialog.py" line="488"/>
+        <source>Use Numista</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CustomFieldsSettingsPage</name>
     <message>
-        <location filename="SettingsDialog.py" line="320"/>
+        <location filename="SettingsDialog.py" line="319"/>
         <source>Names of Custom Fields</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="324"/>
+        <location filename="SettingsDialog.py" line="323"/>
         <source>Custom Field 1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="329"/>
+        <location filename="SettingsDialog.py" line="328"/>
         <source>Custom Field 2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="334"/>
+        <location filename="SettingsDialog.py" line="333"/>
         <source>Custom Field 3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="339"/>
+        <location filename="SettingsDialog.py" line="338"/>
         <source>Custom Field 4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="344"/>
+        <location filename="SettingsDialog.py" line="343"/>
         <source>Custom Field 5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="349"/>
+        <location filename="SettingsDialog.py" line="348"/>
         <source>Custom Field 6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="354"/>
+        <location filename="SettingsDialog.py" line="353"/>
         <source>Custom Field 7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="359"/>
+        <location filename="SettingsDialog.py" line="358"/>
         <source>Custom Field 8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="364"/>
+        <location filename="SettingsDialog.py" line="363"/>
         <source>Custom Field 9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="369"/>
+        <location filename="SettingsDialog.py" line="368"/>
         <source>Custom Field 10</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1367,17 +1337,17 @@ Do you want to send an error message to the author?</source>
 <context>
     <name>FieldsSettingsPage</name>
     <message>
-        <location filename="SettingsDialog.py" line="412"/>
+        <location filename="SettingsDialog.py" line="411"/>
         <source>Rename</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="417"/>
+        <location filename="SettingsDialog.py" line="416"/>
         <source>Revert to default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="425"/>
+        <location filename="SettingsDialog.py" line="424"/>
         <source>Global enabled fields:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1804,92 +1774,92 @@ Do you want to send an error message to the author?</source>
 <context>
     <name>MainSettingsPage</name>
     <message>
-        <location filename="SettingsDialog.py" line="45"/>
+        <location filename="SettingsDialog.py" line="44"/>
         <source>Language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="62"/>
+        <location filename="SettingsDialog.py" line="61"/>
         <source>Reference</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="156"/>
+        <location filename="SettingsDialog.py" line="155"/>
         <source>Backup folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="78"/>
+        <location filename="SettingsDialog.py" line="77"/>
         <source>Make autobackup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="88"/>
+        <location filename="SettingsDialog.py" line="87"/>
         <source>Coin changes before autobackup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="92"/>
+        <location filename="SettingsDialog.py" line="91"/>
         <source>Send error info to author</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="97"/>
+        <location filename="SettingsDialog.py" line="96"/>
         <source>Automatically check for updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="103"/>
+        <location filename="SettingsDialog.py" line="102"/>
         <source>Reliable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="104"/>
+        <location filename="SettingsDialog.py" line="103"/>
         <source>Fast</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="105"/>
+        <location filename="SettingsDialog.py" line="104"/>
         <source>Extra fast (dangerous)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="108"/>
+        <location filename="SettingsDialog.py" line="107"/>
         <source>Acceleration of storage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="110"/>
+        <location filename="SettingsDialog.py" line="109"/>
         <source>Check that coin title present on save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="115"/>
+        <location filename="SettingsDialog.py" line="114"/>
         <source>Check coin duplicates on save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="130"/>
+        <location filename="SettingsDialog.py" line="129"/>
         <source>Default template</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="137"/>
+        <location filename="SettingsDialog.py" line="136"/>
         <source>Images count by default</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="165"/>
+        <location filename="SettingsDialog.py" line="164"/>
         <source>Select reference</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="146"/>
+        <location filename="SettingsDialog.py" line="145"/>
         <source>Maps</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="148"/>
+        <location filename="SettingsDialog.py" line="147"/>
         <source>Verify SSL certifiacte</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1967,127 +1937,127 @@ Do you want to send an error message to the author?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="221"/>
+        <location filename="MainWindow.py" line="213"/>
         <source>Synchronize...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="227"/>
+        <location filename="MainWindow.py" line="219"/>
         <source>Export</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="230"/>
+        <location filename="MainWindow.py" line="222"/>
         <source>For Android version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="235"/>
+        <location filename="MainWindow.py" line="227"/>
         <source>&amp;File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="259"/>
+        <location filename="MainWindow.py" line="251"/>
         <source>Add</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="265"/>
+        <location filename="MainWindow.py" line="257"/>
         <source>Edit...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="272"/>
+        <location filename="MainWindow.py" line="264"/>
         <source>Delete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="278"/>
+        <location filename="MainWindow.py" line="270"/>
         <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="284"/>
+        <location filename="MainWindow.py" line="276"/>
         <source>Paste</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="290"/>
+        <location filename="MainWindow.py" line="282"/>
         <source>Coin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="341"/>
+        <location filename="MainWindow.py" line="333"/>
         <source>View in browser</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="311"/>
+        <location filename="MainWindow.py" line="303"/>
         <source>List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="323"/>
+        <location filename="MainWindow.py" line="315"/>
         <source>Reference</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="326"/>
+        <location filename="MainWindow.py" line="318"/>
         <source>Report...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="331"/>
+        <location filename="MainWindow.py" line="323"/>
         <source>Save current list...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="336"/>
+        <location filename="MainWindow.py" line="328"/>
         <source>Report</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="356"/>
+        <location filename="MainWindow.py" line="348"/>
         <source>User manual</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="360"/>
+        <location filename="MainWindow.py" line="352"/>
         <source>Visit web-site</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="362"/>
+        <location filename="MainWindow.py" line="354"/>
         <source>Check for updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="842"/>
+        <location filename="MainWindow.py" line="826"/>
         <source>About %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="367"/>
+        <location filename="MainWindow.py" line="359"/>
         <source>&amp;Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="375"/>
+        <location filename="MainWindow.py" line="367"/>
         <source>Toolbar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="409"/>
+        <location filename="MainWindow.py" line="401"/>
         <source>Quick search</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="487"/>
+        <location filename="MainWindow.py" line="479"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="487"/>
+        <location filename="MainWindow.py" line="479"/>
         <source>The application will need to restart to apply the new settings. Restart it now?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2102,67 +2072,67 @@ Do you want to send an error message to the author?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="620"/>
+        <location filename="MainWindow.py" line="612"/>
         <source>Importing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="562"/>
+        <location filename="MainWindow.py" line="554"/>
         <source>Before importing you should export existing collection from Cabinet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="567"/>
+        <location filename="MainWindow.py" line="559"/>
         <source>Select directory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="656"/>
+        <location filename="MainWindow.py" line="640"/>
         <source>Select file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="578"/>
+        <location filename="MainWindow.py" line="570"/>
         <source>Import pre-defined coins?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="592"/>
+        <location filename="MainWindow.py" line="584"/>
         <source>Before importing you should export existing collection from Collection Studio to XML Table (choose Collection Studio menu Tools &gt; Export...).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="605"/>
+        <location filename="MainWindow.py" line="597"/>
         <source>Before importing you should export existing collection from uCoin.net to Comma-Separated (CSV) format.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="620"/>
+        <location filename="MainWindow.py" line="612"/>
         <source>Before importing you should export existing collection from uCoin.net to Microsoft Excel (XLS) or Comma-Separated (CSV) format.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="756"/>
+        <location filename="MainWindow.py" line="740"/>
         <source>Open collection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="756"/>
+        <location filename="MainWindow.py" line="740"/>
         <source>Collections (*.db)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="730"/>
+        <location filename="MainWindow.py" line="714"/>
         <source>New collection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="809"/>
+        <location filename="MainWindow.py" line="793"/>
         <source>Create new collection or open one of the existing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="842"/>
+        <location filename="MainWindow.py" line="826"/>
         <source>%s %s
 
 Copyright (C) 2011-2019 Vitaly Ignatov
@@ -2171,22 +2141,22 @@ Copyright (C) 2011-2019 Vitaly Ignatov
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="869"/>
+        <location filename="MainWindow.py" line="853"/>
         <source>Updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="869"/>
+        <location filename="MainWindow.py" line="853"/>
         <source>You already have the latest version.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="880"/>
+        <location filename="MainWindow.py" line="864"/>
         <source>New version</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="880"/>
+        <location filename="MainWindow.py" line="864"/>
         <source>New version is available. Download it now?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2206,38 +2176,38 @@ Copyright (C) 2011-2019 Vitaly Ignatov
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="67"/>
-        <source>Colnect...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="MainWindow.py" line="158"/>
         <source>Excel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="174"/>
+        <location filename="MainWindow.py" line="166"/>
         <source>Cabinet 2.2.2.1, 2013</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="182"/>
+        <location filename="MainWindow.py" line="174"/>
         <source>CoinManage 2011</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="190"/>
+        <location filename="MainWindow.py" line="182"/>
         <source>Collection Studio 3.65</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="206"/>
+        <location filename="MainWindow.py" line="198"/>
         <source>uCoin.net</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MainWindow.py" line="214"/>
+        <location filename="MainWindow.py" line="206"/>
         <source>Tellico</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="MainWindow.py" line="67"/>
+        <source>Numista Import</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2570,22 +2540,22 @@ Created new one</source>
 <context>
     <name>SettingsDialog</name>
     <message>
-        <location filename="SettingsDialog.py" line="567"/>
+        <location filename="SettingsDialog.py" line="520"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="570"/>
+        <location filename="SettingsDialog.py" line="523"/>
         <source>Main</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="571"/>
+        <location filename="SettingsDialog.py" line="524"/>
         <source>Collection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SettingsDialog.py" line="574"/>
+        <location filename="SettingsDialog.py" line="527"/>
         <source>Fields</source>
         <translation type="unfinished"></translation>
     </message>
