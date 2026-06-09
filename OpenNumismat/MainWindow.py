@@ -732,6 +732,8 @@ class MainWindow(QMainWindow):
                 self.tr("Collections (*.db)"), "",
                 QFileDialog.DontConfirmOverwrite)
         if fileName:
+            if not fileName.endswith(".db"):
+                fileName += ".db"
             self.__closeCollection()
             if self.collection.create(fileName):
                 self.setCollection(self.collection)
