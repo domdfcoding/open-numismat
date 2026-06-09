@@ -6,9 +6,9 @@ import PyQt5
 
 pyqtPath = PyQt5.__path__[0]
 translationsPath = os.path.join(pyqtPath, "translations")
-lupdatePath = os.path.join(pyqtPath, 'pylupdate5.exe')
-linguistPath = os.path.join(pyqtPath, 'linguist.exe')
-lreleasePath = os.path.join(pyqtPath, 'lrelease.exe')
+lupdatePath = 'pylupdate5'
+linguistPath = 'linguist'
+lreleasePath = 'lrelease'
 
 srcFiles = []
 for dirname, dirnames, filenames in os.walk('../OpenNumismat'):

@@ -65,7 +65,7 @@ class MainWindow(QMainWindow):
         self.viewButton.setDefaultAction(self.tableViewAct)
 
         colnectAct = QAction(createIcon('colnect.png'),
-                             "Colnect...", self)
+                             self.tr("Colnect..."), self)
         colnectAct.triggered.connect(self.colnectEvent)
         self.collectionActs.append(colnectAct)
 
@@ -157,7 +157,7 @@ class MainWindow(QMainWindow):
         if ImportExcel.isAvailable():
             importExcelAct = QAction(
                                     createIcon('excel.png'),
-                                    "Excel", self)
+                                    self.tr("Excel"), self)
             importExcelAct.triggered.connect(self.importExcel)
             self.collectionActs.append(importExcelAct)
             importMenu.addAction(importExcelAct)
@@ -173,7 +173,7 @@ class MainWindow(QMainWindow):
         if ImportCabinet.isAvailable():
             importCabinetAct = QAction(
                                     createIcon('cabinet.png'),
-                                    "Cabinet 2.2.2.1, 2013", self)
+                                    self.tr("Cabinet 2.2.2.1, 2013"), self)
             importCabinetAct.triggered.connect(self.importCabinet)
             self.collectionActs.append(importCabinetAct)
             importMenu.addAction(importCabinetAct)
@@ -181,7 +181,7 @@ class MainWindow(QMainWindow):
         if ImportCoinManage.isAvailable():
             importCoinManageAct = QAction(
                                     createIcon('CoinManage.png'),
-                                    "CoinManage 2011", self)
+                                    self.tr("CoinManage 2011"), self)
             importCoinManageAct.triggered.connect(self.importCoinManage)
             self.collectionActs.append(importCoinManageAct)
             importMenu.addAction(importCoinManageAct)
@@ -189,7 +189,7 @@ class MainWindow(QMainWindow):
         if ImportCollectionStudio.isAvailable():
             importCollectionStudioAct = QAction(
                                     createIcon('CollectionStudio.png'),
-                                    "Collection Studio 3.65", self)
+                                    self.tr("Collection Studio 3.65"), self)
             importCollectionStudioAct.triggered.connect(
                                                 self.importCollectionStudio)
             self.collectionActs.append(importCollectionStudioAct)
@@ -198,14 +198,14 @@ class MainWindow(QMainWindow):
         if ImportUcoin2.isAvailable():
             importUcoinAct = QAction(
                                     createIcon('ucoin.png'),
-                                    "uCoin.net", self)
+                                    self.tr("uCoin.net"), self)
             importUcoinAct.triggered.connect(self.importUcoin2)
             self.collectionActs.append(importUcoinAct)
             importMenu.addAction(importUcoinAct)
         elif ImportUcoin.isAvailable():
             importUcoinAct = QAction(
                                     createIcon('ucoin.png'),
-                                    "uCoin.net", self)
+                                    self.tr("uCoin.net"), self)
             importUcoinAct.triggered.connect(self.importUcoin)
             self.collectionActs.append(importUcoinAct)
             importMenu.addAction(importUcoinAct)
@@ -213,7 +213,7 @@ class MainWindow(QMainWindow):
         if ImportTellico.isAvailable():
             importTellicoAct = QAction(
                                     createIcon('tellico.png'),
-                                    "Tellico", self)
+                                    self.tr("Tellico"), self)
             importTellicoAct.triggered.connect(self.importTellico)
             self.collectionActs.append(importTellicoAct)
             importMenu.addAction(importTellicoAct)
