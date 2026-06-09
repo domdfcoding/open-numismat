@@ -315,6 +315,12 @@ class Reference(QtCore.QObject):
         if 'obversecolor' in self.userFields or 'reversecolor' in self.userFields:
             ref_color = ReferenceSection('color', self.tr("Color"))
             self.sections.append(ref_color)
+        if 'obverseengraver' in self.userFields:
+            ref_engraver = ReferenceSection('obverseengraver', self.tr("Engraver"))
+            self.sections.append(ref_engraver)
+        if 'reverseengraver' in self.userFields:
+            ref_engraver = ReferenceSection('reverseengraver', self.tr("Engraver"))
+            self.sections.append(ref_engraver)
         if 'edge' in self.userFields or 'signaturetype' in self.userFields:
             ref_edge = ReferenceSection('edge', self.tr("Edge"))
             self.sections.append(ref_edge)
@@ -435,6 +441,8 @@ class Reference(QtCore.QObject):
             name = 'place'
         elif name in ('obversecolor', 'reversecolor'):
             name = 'color'
+        #elif name in ('obverseengraver',):# 'reverseengraver'):
+        #    name = 'engraver'
         elif name in ('edge', 'signaturetype'):
             name = 'edge'
 
@@ -451,6 +459,8 @@ class Reference(QtCore.QObject):
                 sectionNames.extend(['payplace', 'saleplace'])
             elif section.name == 'color':
                 sectionNames.extend(['obversecolor', 'reversecolor'])
+            #elif section.name == 'engraver':
+            #    sectionNames.extend(['obverseengraver'])#, 'reverseengraver'])
             elif section.name == 'edge':
                 sectionNames.extend(['edge', 'signaturetype'])
             else:
