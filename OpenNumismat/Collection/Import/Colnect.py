@@ -145,14 +145,10 @@ class ColnectDialog(QDialog):
         self.setValue(record, "material", data, "composition", "text")
         # Fineness
 
-        for key, unit in (
-            ("weight", "g"),
-            ("size", "mm"),
-            ("thickness", "mm"),
-        ):
-            if key in data:
-                record.setValue(key, f"{data.pop(key)} {unit}")
-            
+        self.setValue(record, "weight", data)
+        self.setValue(record, "thickness", data)
+        self.setValue(record, "thickness", data, "size2")
+        self.setValue(record, "diameter", data, "size")
         self.setValue(record, "shape", data)
         self.setValue(record, "obvrev", data, "orientation")  # TODO: lookup ( "Medallic (0°)", "Coin (180°)", "90°")
         self.setValue(record, "issuedate", data, "issue_terms", "issue_date")
@@ -162,13 +158,14 @@ class ColnectDialog(QDialog):
             if side in data:
                 self.setObvRev(record, data.pop(side), side)
 
-        edge = data.pop("edge")
-        self.setValue(record, "edge", edge, "description")
-        self.setValue(record, "edgelabel", edge, "lettering")
-        if "picture" in edge:
-            img = self.getImgBytes(edge.pop("picture"))
-            if img:
-                record.setValue("edgeimg", img)
+        if "edge" in data:
+            edge = data.pop("edge")
+            self.setValue(record, "edge", edge, "description")
+            self.setValue(record, "edgelabel", edge, "lettering")
+            if "picture" in edge:
+                img = self.getImgBytes(edge.pop("picture"))
+                if img:
+                    record.setValue("edgeimg", img)
         
         
         references: list = data.pop("references")
@@ -194,8 +191,8 @@ class ColnectDialog(QDialog):
 
         # record.setValue(f"{obvrev}designer", )
 
-        if "engravers" in data:
-            record.setValue(f"{obvrev}engraver", " and ".join(data.pop("engravers")))
+        if "engravers" in data or "designers" in data:
+            record.setValue(f"{obvrev}engraver", " and ".join([*data.pop("engravers", []), *data.pop("designers", [])]))
 
         if "picture" in data:
             img = self.getImgBytes(data.pop("picture"))
