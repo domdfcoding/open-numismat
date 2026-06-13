@@ -29,7 +29,7 @@ try:
     plt.style.use(PRJ_PATH + '/opennumismat.mplstyle')
     # plt.style.use('seaborn-paper')
 except ImportError:
-    print('matplotlib or nympy module missed. Statistics not available')
+    print('matplotlib or numpy module missed. Statistics not available')
     statisticsAvailable = False
 
     class FigureCanvas:
